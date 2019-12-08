@@ -1,0 +1,13 @@
+mkdir -p /dist
+
+# 挂载 dvd 镜像
+mount -t cd9660 /dev/cd0 /dist/
+
+# 设置环境变量
+setenv REPOS_DIR /dist/packages/repos
+
+#  安装 pkg 工具
+pkg bootstrap
+
+# 安装 dvd 中的软件包
+pkg install <package> (samba48)
