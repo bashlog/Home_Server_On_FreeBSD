@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="zh_CN">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <h1>Samba_Server_Config</h1>
+        <form action="" method="post">
+            <table align="center">
+                <tr>
+                    <th>全局</th>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>workgroup</td>
+                    <td><input type="text" name="samba_workgroup" id="8698" value="WORKGROUP"></td>
+                </tr>
+                <tr>
+                    <td>server string</td>
+                    <td><input type="text" name="samba_server_string" id="8414" value="Samba Server Version %v"></td>
+                </tr>
+                <tr>
+                    <td>max log size</td>
+                    <td>
+                        <select name="samba_server_max_log_size" id="4037">
+                            <option value="10">10m</option>
+                            <option value="20">20m</option>
+                            <option value="40">40m</option>
+                            <option value="50" selected>50m</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>server min protocol</td>
+                    <td>
+                        <select name="server_min_protocol" id="">
+                            <option value="SMB2_10" selected>Windows 7</option>
+                            <option value="SMB3_00">Windows 8</option>
+                            <option value="SMB3_02">Windows 8.1</option>
+                            <option value="SMB3_11">Windows 10</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>security</td>
+                    <td>
+                        <select name="security" id="">
+                            <option value="user"selected>USER</option>
+                            <option value="auto">AUTO</option>
+                            <option value="domain">DOMAIN</option>
+                            <option value="ads">ADS</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>分享名称</td>
+                    <td><input type="text" name="shareName" id="8452"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                </tr>
+
+                <tr>
+                    <td><input type="submit" value="提交"></td>
+                </tr>
+            </table>
+        </form>
+        
+    </body>
+</html>
